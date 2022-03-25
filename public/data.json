@@ -1,0 +1,47 @@
+[
+    {
+      "id": "1",
+      "picture": "./logo192.png",
+      "name": "Doris Hines"
+    },
+    {
+      "id": "2",
+      "picture": "http://placehold.it/32x32",
+      "name": "Inez Bryant"
+    },
+    {
+      "id": "3",
+      "picture": "http://placehold.it/32x32",
+      "name": "Crawford Valenzuela"
+    },
+    {
+      "id": "4",
+      "picture": "http://placehold.it/32x32",
+      "name": "Janell Raymond"
+    },
+    {
+      "id": "5",
+      "picture": "http://placehold.it/32x32",
+      "name": "Lorena Garrison"
+    },
+    {
+      "id": "6",
+      "picture": "http://placehold.it/32x32",
+      "name": "Blanchard Noble"
+    },
+    {
+      "id": "7",
+      "picture": "http://placehold.it/32x32",
+      "name": "Blanchard Noble"
+    },
+    {
+      "id": "8",
+      "picture": "http://placehold.it/32x32",
+      "name": "Blanchard Noble"
+    },
+    {
+      "id": "9",
+      "picture": "http://placehold.it/32x32",
+      "name": "Blanchard Noble"
+    }
+  ]

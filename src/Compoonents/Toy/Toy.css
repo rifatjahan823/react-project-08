@@ -1,0 +1,11 @@
+.toys{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.toys-product{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.toys-cart{
+    background-color: darkcyan;
+}
