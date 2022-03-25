@@ -7,7 +7,6 @@ const Cart = (props) => {
         <div className='cart'>
            <img src={picture} alt="" />
                {name}
-            
         </div>
     );
 };

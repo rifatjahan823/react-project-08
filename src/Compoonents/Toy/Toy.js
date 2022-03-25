@@ -8,12 +8,13 @@ const Toy = () => {
         .then(res=>res.json())
         .then(data=>setToys(data))
     },[])
+    //---- set cart details--------- 
     const [cart,setCart]=useState([])
     const GetCartDetails =(toy)=>{
         const carts =[...cart,toy]
         setCart(carts)
     }
-   
+// ----- reset button------------
     const CartReset =()=>{
         const reset =[]
         setCart(reset)
@@ -33,23 +34,25 @@ const Toy = () => {
             <div className="toys-cart">
             <h1>select</h1>
             {
-                    cart.map(toy=><Cart toy={toy}
-                   key={toy.id}
-                   cart={toy}>
-                   </Cart>)
+                cart.map(toy=><Cart toy={toy}
+                key={toy.id}
+                cart={toy}>
+                </Cart>)
                 }
              <button onClick={CartReset}>Chose again</button>
+             <button >Chose for me</button>
             </div>
         </div>
         </div>
     );
 };
 const Showtoy=(props)=>{
-    const{name,picture}=props.toy
+    const{name,picture,price}=props.toy
     return(
         <div className='Showtoy'>
             <img src={picture} alt="" />
             <p>{name}</p> 
+            <p>${price}</p>
            <button onClick={()=>props.GetCartDetails(props.toy)} className='toys-btn'>
                 <p>Add To Cart</p>
            </button>
