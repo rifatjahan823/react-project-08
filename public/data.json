@@ -2,46 +2,56 @@
     {
       "id": "1",
       "picture": "./logo192.png",
-      "name": "Doris Hines"
+      "name": "Doris Hines",
+      "price":"7"
     },
     {
       "id": "2",
       "picture": "http://placehold.it/32x32",
-      "name": "Inez Bryant"
+      "name": "Inez Bryant",
+      "price":"14"
     },
     {
       "id": "3",
       "picture": "http://placehold.it/32x32",
-      "name": "Crawford Valenzuela"
+      "name": "Crawford Valenzuela",
+      "price":"16"
     },
     {
       "id": "4",
       "picture": "http://placehold.it/32x32",
-      "name": "Janell Raymond"
+      "name": "Janell Raymond",
+      "price":"8"
+     
     },
     {
       "id": "5",
       "picture": "http://placehold.it/32x32",
-      "name": "Lorena Garrison"
+      "name": "Lorena Garrison",
+      "price":"12"
     },
     {
       "id": "6",
       "picture": "http://placehold.it/32x32",
-      "name": "Blanchard Noble"
+      "name": "Blanchard Noble",
+      "price":"20"
     },
     {
       "id": "7",
       "picture": "http://placehold.it/32x32",
-      "name": "Blanchard Noble"
+      "name": "Blanchard Noble",
+      "price":"15"
     },
     {
       "id": "8",
       "picture": "http://placehold.it/32x32",
-      "name": "Blanchard Noble"
+      "name": "Blanchard Noble",
+      "price":"5"
     },
     {
       "id": "9",
       "picture": "http://placehold.it/32x32",
-      "name": "Blanchard Noble"
+      "name": "Blanchard Noble",
+      "price":"10"
     }
   ]
