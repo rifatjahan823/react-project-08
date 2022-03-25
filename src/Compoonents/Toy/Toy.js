@@ -13,6 +13,11 @@ const Toy = () => {
         const carts =[...cart,toy]
         setCart(carts)
     }
+   
+    const CartReset =()=>{
+        const reset =[]
+        setCart(reset)
+    }
     return (
         <div>
             <h1>Babys toys</h1>
@@ -26,14 +31,14 @@ const Toy = () => {
                 }
             </div>
             <div className="toys-cart">
+            <h1>select</h1>
             {
                     cart.map(toy=><Cart toy={toy}
                    key={toy.id}
                    cart={toy}>
                    </Cart>)
                 }
-                  <h1>select</h1>
-             
+             <button onClick={CartReset}>Chose again</button>
             </div>
         </div>
         </div>
