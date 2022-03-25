@@ -8,6 +8,8 @@ const Toy = () => {
         .then(data=>setToys(data))
     },[])
     return (
+        <div>
+            <h1>Babys toys</h1>
         <div className='toys'>
             <div className="toys-product">
                 {
@@ -20,14 +22,18 @@ const Toy = () => {
 
             </div>
         </div>
+        </div>
     );
 };
 const Showtoy=(props)=>{
     const{name,picture}=props.toy
     return(
-        <div>
+        <div className='Showtoy'>
             <img src={picture} alt="" />
-           <p>{name}</p> 
+            <p>{name}</p> 
+           <button className='toys-btn'>
+                <p>Add To Cart</p>
+           </button>
         </div>
     )
 }

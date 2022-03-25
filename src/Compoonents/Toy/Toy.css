@@ -5,7 +5,26 @@
 .toys-product{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    gap: 3%;
+    padding: 50px;
 }
 .toys-cart{
     background-color: darkcyan;
+   margin-top: 50px;
+}
+.Showtoy{
+    border: 1px solid black;
+    position: relative;
+    height: 300px;
+}
+.Showtoy img{
+    width: 100%;
+    height:50px;
+}
+.toys-btn{
+    background-color: aqua;
+    width: 100%;
+    position:absolute;
+    bottom: 0;
+
 }
