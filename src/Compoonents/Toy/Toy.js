@@ -28,7 +28,7 @@ const Toy = () => {
                 alert("please select the product")
                }
                else{
-                alert("This Product Best For You"+" "+cart[random].name)
+                alert("This Product Best For You" +" "+cart[random].name)
                }
     }
     return (
