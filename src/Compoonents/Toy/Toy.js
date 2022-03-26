@@ -10,7 +10,7 @@ const Toy = () => {
     },[])
     //---- set cart details--------- 
     const [cart,setCart]=useState([])
-    const GetCartDetails =(toy)=>{
+        const GetCartDetails =(toy)=>{
         const carts =[...cart,toy]
         setCart(carts)
     }
@@ -18,6 +18,12 @@ const Toy = () => {
     const CartReset =()=>{
         const reset =[]
         setCart(reset)
+    }
+    //----- rendom product select-------
+    const Random =()=>{
+         const random =[Math.round(Math.random()*cart.length)]
+            setCart(random) 
+            alert("your selection"+" "+cart[random].name)
     }
     return (
         <div>
@@ -35,12 +41,14 @@ const Toy = () => {
             <h1>select</h1>
             {
                 cart.map(toy=><Cart toy={toy}
-                key={toy.id}
-                cart={toy}>
-                </Cart>)
+                    key={toy.id}
+                    cart={toy}
+                    >
+                    </Cart>)
                 }
-             <button onClick={CartReset}>Chose again</button>
-             <button >Chose for me</button>
+             <button className='Cart-btn' onClick={CartReset}>Chose again</button>
+             <br></br>
+             <button className='Cart-btn' onClick={Random}>random</button>
             </div>
         </div>
         </div>
