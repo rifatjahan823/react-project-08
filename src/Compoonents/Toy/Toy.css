@@ -1,12 +1,13 @@
 .toys{
     display: grid;
     grid-template-columns: 6fr 2fr;
+    min-height: 1345px;
 }
 .toys-product{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 3%;
-    padding: 50px;
+    padding: 10px 50px;
 }
 .toys-cart{
     background-color: whitesmoke;
@@ -32,7 +33,7 @@
 
 .toys-btn{
     border: none;
-    background-color: #E35300;
+    background-color: #029BDD;
     width: 100%;
     position:absolute;
     bottom: 0;
@@ -42,6 +43,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom:4px solid #015d85;
 
 }
 .toys-btn p{
@@ -49,14 +51,24 @@
 }
 .Cart-btn{
     border: none;
-    border: 1px solid #E35300;
+    background-color:  #029BDD;
     padding: 10px 30px;
     margin-bottom: 3%;
+    margin-right: 3%;
+    border-bottom:4px solid #015d85;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .2s;
 }
+.Cart-btn:hover{
+    transform: scale(0.9);
+}
+
 @media (max-width: 576px) { 
     .toys{
         display: grid;
         grid-template-columns: repeat(2,1fr);
+        min-height:4474px;
     }
     .toys-product{
         display: grid;

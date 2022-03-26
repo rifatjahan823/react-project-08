@@ -3,6 +3,7 @@ import Cart from '../Cart/Cart';
 import './Toy.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import Question from '../Question/Question';
 const Toy = () => {
     const [toys,setToys]=useState([])
     useEffect(()=>{
@@ -12,31 +13,31 @@ const Toy = () => {
     },[])
     //---- set cart details--------- 
     const [cart,setCart]=useState([])
-
         const GetCartDetails =(toy)=>{
         const carts =[...cart,toy]
         setCart(carts)
     }
-// ----- reset button------------
+// ----- Clear All-----------
     const CartReset =()=>{
         const reset =[]
         setCart(reset)
     }
-    //----- rendom product select-------
+    //----- Suggst Me-------
     const Random =()=>{
          const random =[Math.round(Math.random()*cart.length)]
-            
             if(!cart.length){
-                alert("please select product")
+                alert("please select the product")
                }
                else{
-                alert("your selection"+" "+cart[random].name)
+                alert("This Product Best For You"+" "+cart[random].name)
                }
-           console.log(cart)
     }
     return (
-        <div className='toys'>
-            <div className="toys-product">
+            <div className='toys'>
+            {/* All product details */}
+          <div>
+              <h1 style={{textAlign:'center'}}>King Toys</h1>
+          <div className="toys-product">
                 {
                     toys.map(toy=><Showtoy toy={toy}
                    key={toy.id}
@@ -45,8 +46,10 @@ const Toy = () => {
                    </Showtoy>)
                 }
             </div>
+          </div>
+            {/* add to cart details */}
             <div className="toys-cart">
-            <h1>select</h1>
+            <h1>Collect Your Toys </h1>
             {
                 cart.map(toy=><Cart toy={toy}
                     key={toy.id}
@@ -55,11 +58,8 @@ const Toy = () => {
                     >
                     </Cart>)
                 }
-             <button className='Cart-btn' onClick={CartReset}>Chose again</button>
-             <button className='Cart-btn' onClick={Random}>random</button>
-            
-             <br></br>
-             
+                  <button className='Cart-btn' onClick={Random}>Suggest Me</button>
+             <button className='Cart-btn' onClick={CartReset}>Clear All</button>
             </div>
         </div>
     );
