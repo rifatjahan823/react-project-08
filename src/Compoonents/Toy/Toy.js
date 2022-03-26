@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import './Toy.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 const Toy = () => {
     const [toys,setToys]=useState([])
     useEffect(()=>{
@@ -23,17 +25,22 @@ const Toy = () => {
     const Random =()=>{
          const random =[Math.round(Math.random()*cart.length)]
             setCart(random) 
-            alert("your selection"+" "+cart[random].name)
+            if(!cart.length){
+                alert("please select product")
+               }
+               else{
+                 alert("your selection"+" "+cart[random].name)
+               }
+           console.log(cart)
     }
     return (
-        <div>
-            <h1>Babys toys</h1>
         <div className='toys'>
             <div className="toys-product">
                 {
                     toys.map(toy=><Showtoy toy={toy}
                    key={toy.id}
-                   GetCartDetails={GetCartDetails}>
+                   GetCartDetails={GetCartDetails}
+                  >
                    </Showtoy>)
                 }
             </div>
@@ -51,7 +58,6 @@ const Toy = () => {
              <button className='Cart-btn' onClick={Random}>random</button>
             </div>
         </div>
-        </div>
     );
 };
 const Showtoy=(props)=>{
@@ -59,10 +65,11 @@ const Showtoy=(props)=>{
     return(
         <div className='Showtoy'>
             <img src={picture} alt="" />
-            <p>{name}</p> 
+            <h3>{name}</h3> 
             <p>${price}</p>
            <button onClick={()=>props.GetCartDetails(props.toy)} className='toys-btn'>
                 <p>Add To Cart</p>
+                <FontAwesomeIcon icon={faShoppingCart} />
            </button>
         </div>
     )

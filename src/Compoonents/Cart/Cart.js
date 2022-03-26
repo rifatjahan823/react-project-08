@@ -5,7 +5,8 @@ const Cart = (props) => {
     return (
         <div className='cart'>
            <img src={picture} alt="" />
-             {name}
+             <p>{name}</p>
+           
         </div>
     );
 };
