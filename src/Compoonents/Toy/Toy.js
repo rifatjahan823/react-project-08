@@ -3,7 +3,6 @@ import Cart from '../Cart/Cart';
 import './Toy.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
-import Question from '../Question/Question';
 const Toy = () => {
     const [toys,setToys]=useState([])
     useEffect(()=>{

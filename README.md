@@ -1,6 +1,6 @@
 # King Toys
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://react-project-08.netlify.app/).
 
 ## Available Scripts
 
