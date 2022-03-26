@@ -1,4 +1,4 @@
-# King Toys
+# Toy House
 
 This project was bootstrapped with [Create React App](https://react-project-08.netlify.app/).
 

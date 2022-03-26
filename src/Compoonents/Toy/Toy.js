@@ -35,7 +35,7 @@ const Toy = () => {
             <div className='toys'>
             {/* All product details */}
           <div>
-              <h1 style={{textAlign:'center'}}>King Toys</h1>
+              <h1 style={{textAlign:'center'}}>Toy House</h1>
           <div className="toys-product">
                 {
                     toys.map(toy=><Showtoy toy={toy}
